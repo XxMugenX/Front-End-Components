@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(239, 242, 191);
+}
+
+.profile-card {
+    width: 350px;
+    height: 500px;
+    /* border: 3px solid red; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 32px;
+    overflow: hidden;
+    margin: 10px 20px;
+    box-shadow: 0 0 10px 3px rgba(51, 66, 66, 0.418) ;
+    transition: scale 0.2s ease-out;
+}
+
+.profile-card:hover {
+    scale: 1.02;
+    box-shadow: 0 0 10px 3px rgba(125, 259, 255);
+    transition: all 0.3s ease-out;
+    .circle-2{
+        clip-path: path('M 0 0 H 350 V 220 C 250 230, 0 205, -1 210 Z');
+        transition: clip-path 0.3s ease-out;
+    }
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;   
+    height: 150px;   
+}
+ .circle-2 { 
+    height: 300px;
+    width: 350px;
+    clip-path: path('M 0 0 H 350 V 135 C 250 210, 0 220, 0 200 Z'); 
+    transition: clip-path 0.3s ease-out;
+}
+
+/* .circle-2:hover{
+    clip-path: path('M 0 0 H 350 V 220 C 250 230, 0 205, -1 210 Z');
+    transition: clip-path 0.3s ease-out;
+} */
+
+.profile-pic {
+    height: 210px;
+    width: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.card-body {
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height : 290px;
+    clip-path: path("M 350 0 V 350 H 0 V 70  Z");
+    padding: 50px 10px 10px 10px;
+    text-align: center;
+    word-wrap: break-word;   
+}
+
+.card-name{
+    padding: 0;
+    margin-bottom: 5px;
+    height: fit-content;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.card-extras {
+    opacity: 0.5;
+
+}
+
+.card-tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.card-description {
+    height: 110px ;
+    overflow: auto;
+    scrollbar-width:thin;
+    margin-bottom: 12px;
+}
+
+.card-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: auto;
+}
+
+.btn1, .btn2 {
+    margin-top: 8px;
+    height: 38px;
+    padding: 10px 30px;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: white;
+
+    
+}
+
+.btn1 {
+    margin-right: 30px;
+
+}
+
+.btn2 {
+    margin-left: 30px;
+}
+
+.btn1:hover ,.btn2:hover {
+    background-color: antiquewhite;
+}
+
+
