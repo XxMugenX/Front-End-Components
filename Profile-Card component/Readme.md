@@ -1,4 +1,4 @@
-uiProfile Card Component
+Profile Card Component
 
 This is a Front-End UI component that displays stylish profile cards for anime shows. On hover, the image expands to full view ,the card scales and glows  creatinga feeling of closeness for the user, giving an interactive and modern card effect.
 
@@ -53,6 +53,9 @@ Font: you are free to change this to whatever you want , i used Monospace
 
 ---
 
+📝 Notes
+
+[I learnt the basics of clip paths here](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)
 
 ---
 
