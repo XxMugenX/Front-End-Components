@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Spinning Carousel</title>
+    <style>
+        body {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .carousel {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: spin 10s linear infinite;
+        }
+
+        .carousel img {
+            position: absolute;
+            width: 280px;
+            height: 180px;
+            left: 10px;
+            top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Position each image around the circle */
+        .carousel img:nth-child(1) {
+            transform: rotateY(0deg) translateZ(400px);
+        }
+
+        .carousel img:nth-child(2) {
+            transform: rotateY(60deg) translateZ(400px);
+        }
+
+        .carousel img:nth-child(3) {
+            transform: rotateY(120deg) translateZ(400px);
+        }
+
+        .carousel img:nth-child(4) {
+            transform: rotateY(180deg) translateZ(400px);
+        }
+
+        .carousel img:nth-child(5) {
+            transform: rotateY(240deg) translateZ(400px);
+        }
+
+        .carousel img:nth-child(6) {
+            transform: rotateY(300deg) translateZ(400px);
+        }
+
+        /* Animation to spin the carousel */
+        @keyframes spin {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="carousel">
+        <img src="https://picsum.photos/300/200?random=1" alt="Slide 1">
+        <img src="https://picsum.photos/300/200?random=2" alt="Slide 2">
+        <img src="https://picsum.photos/300/200?random=3" alt="Slide 3">
+        <img src="https://picsum.photos/300/200?random=4" alt="Slide 4">
+        <img src="https://picsum.photos/300/200?random=5" alt="Slide 5">
+        <img src="https://picsum.photos/300/200?random=6" alt="Slide 6">
+    </div>
+
+</body>
+
+</html>
