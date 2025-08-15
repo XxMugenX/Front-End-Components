@@ -1,0 +1,242 @@
+body {
+    display: flex;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    height: 100vh;
+    background-color: #66331f;
+    overflow: hidden;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+    
+}
+
+.container {
+    position: relative;
+    left: 0;
+    /* border:  2px solid rgb(116, 18, 197); */
+    height: 100vh;
+    width: 100vw;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /* border: 2px solid rgb(15, 163, 72); */
+    background-color: #3f1f13;
+    height: 100vh;
+    width: 1000px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding-left: 20px;
+    overflow: none;
+
+    /* clip-path: path('M 0 0 L 650 0 A 170 300 0 0 1 750 50 A 90 140 0 0 1 780 125 A 130 75 0 0 1 700 200 L 640 214 A 96 46 0 0 0 600 260 A 96 46 0 0 0 630 283 L 700 316 A 150 64 0 0 1 650 420 A 96 25 0 0 0 630 445 L 800 500 A 7 6 0 0 1 720 760 L 0 760  Z') */
+    
+}
+/* A 160 153 0 0 0 550 267 */
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    /* border: 2px solid red; */
+    opacity: 1;
+    height: 400px;
+    width: 500px;
+    border-radius: 16px;
+    backdrop-filter:blur(1px);
+    padding: 20px;
+    padding-left: 40px;
+    /* transition: all 0.3s ease-out; */
+}
+
+/* .content:hover {
+    transition: all 0.3s ease-in;
+    background-color: #31180f;
+    box-shadow: 0px 0px 7px 9px #2e170e ;
+} */
+
+.start {
+    font-weight: bold;
+    opacity: 0.9;
+    color: #dba16a;
+
+}
+
+.account {
+    font-weight: bold;
+    font-size: medium;
+    padding-bottom: 0px;
+    color: #dba16a;
+    
+}
+
+.account p {
+    opacity: 0.7;
+}
+
+.name-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1px;
+    margin-bottom: 20px;
+}
+
+.name-box p {
+    position: relative;
+    left: 10px;
+    font-size: small;
+    color: #dba16a;
+}
+
+i {
+    position: absolute;
+    top: 33%;
+    right: 10%;
+    
+}
+
+.name {
+    position: relative;
+}
+
+
+label {
+    height: fit-content;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid black;
+    border-style: none;
+    border-radius: 8px;
+    width: 85%;
+    font-size: medium;
+    background-color: #d4a374;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.eandp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.eandp p {
+    position: relative;
+    left: 10px;
+    font-size: small;
+    color: #dba16a;
+    margin-top: 0;
+}
+
+.eandp input {
+    width: 92%;
+    padding: 10px;
+    /* border: 2px solid black; */
+    border-style: none;
+    border-radius: 8px;
+    background-color: #d4a374;
+}
+
+.eandp i {
+    right: 6%;
+}
+
+.login {
+    color: #dba16a;
+}
+
+.login a {
+    text-decoration: none;
+    color: grey;
+    opacity: 0.9;
+}
+
+.submit {
+    width: 96%;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #66331f;
+    border-style: none;
+    color: #dba16a;
+}
+
+.circle {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    left: 500px;
+    top: 280px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+}
+
+.circle2 {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    left: 1150px;
+    top: 290px;
+    border-radius: 50%;
+}
+
+.box2 {
+    
+    /* background-image: url('./img/50050-five-minute-ice-cream-DDMFS-4x3-076-fbf49ca6248e4dceb3f43a4f02823dd9.jpg'); */
+    background-repeat: no-repeat;
+    position: absolute;
+    /* border: 2px solid rgb(199, 14, 14); */
+    background-color: #66331f;
+    height: 100vh;
+    width: 1580px;
+}
+
+.i1 {
+    position: absolute;
+    right: 10px;
+    bottom: -0px;
+    scale: 1.13;
+    width: auto;
+    height: 700px;
+    object-fit: contain;
+    animation: bounce 5s linear infinite normal ;
+}
+
+.i2 {
+    position: absolute;
+    scale: 0.9;
+    left: -30px;
+    width: auto;
+    height: 300px;
+    object-fit: contain;
+    /* animation: bounce 2s linear infinite normal ; */
+}
+
+.login p {
+    font-weight: bold;
+    font-style: none;
+    text-decoration: none;
+
+}
+
+@keyframes bounce {
+    0% { bottom: 40px;}
+    50% {bottom: 0px;}
+    100%{ bottom: 40px;}
+    
+}
